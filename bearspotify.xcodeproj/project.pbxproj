@@ -14,6 +14,12 @@
 		0CB75778207AACCE00BC3C2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB75776207AACCE00BC3C2E /* LaunchScreen.storyboard */; };
 		0CB75783207AACCE00BC3C2E /* bearspotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB75782207AACCE00BC3C2E /* bearspotifyTests.swift */; };
 		0CB7578E207AACCF00BC3C2E /* bearspotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB7578D207AACCF00BC3C2E /* bearspotifyUITests.swift */; };
+		0CB7579E207AB01300BC3C2E /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB7579B207AB01200BC3C2E /* SpotifyAudioPlayback.framework */; };
+		0CB7579F207AB01300BC3C2E /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB7579C207AB01200BC3C2E /* SpotifyAuthentication.framework */; };
+		0CB757A0207AB01300BC3C2E /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB7579D207AB01300BC3C2E /* SpotifyMetadata.framework */; };
+		0CB757A4207AB04200BC3C2E /* BridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB757A3207AB04200BC3C2E /* BridgeViewController.m */; };
+		0CB757A7207AB14800BC3C2E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB757A6207AB14800BC3C2E /* AVFoundation.framework */; };
+		0CB757A9207AB15F00BC3C2E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB757A8207AB15F00BC3C2E /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,14 @@
 		0CB75789207AACCF00BC3C2E /* bearspotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bearspotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB7578D207AACCF00BC3C2E /* bearspotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bearspotifyUITests.swift; sourceTree = "<group>"; };
 		0CB7578F207AACCF00BC3C2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB7579B207AB01200BC3C2E /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		0CB7579C207AB01200BC3C2E /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		0CB7579D207AB01300BC3C2E /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		0CB757A1207AB04100BC3C2E /* bearspotify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bearspotify-Bridging-Header.h"; sourceTree = "<group>"; };
+		0CB757A2207AB04200BC3C2E /* BridgeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeViewController.h; sourceTree = "<group>"; };
+		0CB757A3207AB04200BC3C2E /* BridgeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BridgeViewController.m; sourceTree = "<group>"; };
+		0CB757A6207AB14800BC3C2E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0CB757A8207AB15F00BC3C2E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB757A9207AB15F00BC3C2E /* SystemConfiguration.framework in Frameworks */,
+				0CB757A7207AB14800BC3C2E /* AVFoundation.framework in Frameworks */,
+				0CB7579E207AB01300BC3C2E /* SpotifyAudioPlayback.framework in Frameworks */,
+				0CB757A0207AB01300BC3C2E /* SpotifyMetadata.framework in Frameworks */,
+				0CB7579F207AB01300BC3C2E /* SpotifyAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,7 @@
 				0CB75781207AACCE00BC3C2E /* bearspotifyTests */,
 				0CB7578C207AACCF00BC3C2E /* bearspotifyUITests */,
 				0CB7576B207AACCC00BC3C2E /* Products */,
+				0CB757A5207AB14800BC3C2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +117,18 @@
 		0CB7576C207AACCC00BC3C2E /* bearspotify */ = {
 			isa = PBXGroup;
 			children = (
+				0CB7579B207AB01200BC3C2E /* SpotifyAudioPlayback.framework */,
+				0CB7579C207AB01200BC3C2E /* SpotifyAuthentication.framework */,
+				0CB7579D207AB01300BC3C2E /* SpotifyMetadata.framework */,
 				0CB7576D207AACCC00BC3C2E /* AppDelegate.swift */,
 				0CB7576F207AACCC00BC3C2E /* ViewController.swift */,
 				0CB75771207AACCC00BC3C2E /* Main.storyboard */,
 				0CB75774207AACCE00BC3C2E /* Assets.xcassets */,
 				0CB75776207AACCE00BC3C2E /* LaunchScreen.storyboard */,
 				0CB75779207AACCE00BC3C2E /* Info.plist */,
+				0CB757A2207AB04200BC3C2E /* BridgeViewController.h */,
+				0CB757A3207AB04200BC3C2E /* BridgeViewController.m */,
+				0CB757A1207AB04100BC3C2E /* bearspotify-Bridging-Header.h */,
 			);
 			path = bearspotify;
 			sourceTree = "<group>";
@@ -123,6 +149,15 @@
 				0CB7578F207AACCF00BC3C2E /* Info.plist */,
 			);
 			path = bearspotifyUITests;
+			sourceTree = "<group>";
+		};
+		0CB757A5207AB14800BC3C2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CB757A8207AB15F00BC3C2E /* SystemConfiguration.framework */,
+				0CB757A6207AB14800BC3C2E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +228,7 @@
 				TargetAttributes = {
 					0CB75769207AACCC00BC3C2E = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					0CB7577D207AACCE00BC3C2E = {
 						CreatedOnToolsVersion = 9.3;
@@ -256,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB757A4207AB04200BC3C2E /* BridgeViewController.m in Sources */,
 				0CB75770207AACCC00BC3C2E /* ViewController.swift in Sources */,
 				0CB7576E207AACCC00BC3C2E /* AppDelegate.swift in Sources */,
 			);
@@ -430,8 +467,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U55YPQQ7X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/bearspotify",
+				);
 				INFOPLIST_FILE = bearspotify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -439,6 +481,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mpc.bearspotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bearspotify/bearspotify-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,8 +492,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U55YPQQ7X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/bearspotify",
+				);
 				INFOPLIST_FILE = bearspotify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +506,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mpc.bearspotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bearspotify/bearspotify-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
