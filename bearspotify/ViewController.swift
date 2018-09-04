@@ -41,7 +41,8 @@ class ViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAu
     SPTAuth.defaultInstance().clientID = "813e9ee658044c30bbdbc78937fcd878"
     SPTAuth.defaultInstance().redirectURL = URL(string: "bearspotify://returnAfterLogin")
     
-    SPTAuth.defaultInstance().tokenSwapURL = URL(string: "bearspotify://returnAfterLogin")
+    SPTAuth.defaultInstance().tokenSwapURL = URL(string: "http://localhost:4000/api/v1/swap")
+    SPTAuth.defaultInstance().tokenRefreshURL = URL(string: "http://localhost:4000/api/v1/refresh")
     
     SPTAuth.defaultInstance().requestedScopes = [SPTAuthStreamingScope, SPTAuthPlaylistModifyPrivateScope, SPTAuthPlaylistModifyPrivateScope]
     loginUrl = SPTAuth.defaultInstance().spotifyWebAuthenticationURL()
