@@ -56,6 +56,13 @@ class ViewController: UIViewController, SPTAudioStreamingPlaybackDelegate, SPTAu
     }
   }
   
+  @IBAction func renewSessionButtonWasTouchedUpInside(sender: Any) {
+    SPTAuth.defaultInstance().renewSession(self.session) { (error, session) in
+      guard let renewSession = session else {return}
+      debugPrint(renewSession.accessToken)
+    }
+  }
+  
   @objc func updateAfterFirstLogin () {
     let userDefaults = UserDefaults.standard
     if let sessionObj:AnyObject = userDefaults.object(forKey: "SpotifySession") as AnyObject? {
